@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precificador</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <main>
+            <div id="part-one">
+                <div class="reset">
+                    <button class="reset-button" onclick="reset()">Resetar</button>
+                </div>
+                <div class="format-input">
+                    <label for="name-product">Nome do produto:</label>
+                    <input type="text" id="name-product" placeholder="Ex: Pote">
+                    <button class="format-button" onclick="button1()">Próximo</button>
+                </div>
+            </div>
+            <div id="part-two">
+                <div class="reset">
+                    <button class="reset-button" onclick="reset()">Resetar</button>
+                </div>
+                <div class="format-input">
+                    <label for="amount">Quantidade:</label>
+                    <input type="number" id="amount" placeholder="Ex: 100">
+                    <button class="format-button" onclick="button2()">Próximo</button>
+                </div>
+            </div>
+            <div id="part-three">
+                <div class="reset">
+                    <button class="reset-button" onclick="reset()">Resetar</button>
+                </div>
+                <div class="format-input">
+                    <label for="all-value">Valor pago total:</label>
+                    <input type="number" id="all-value" placeholder="Ex: R$50,00">
+                    <button class="format-button" onclick="button3()">Próximo</button>
+                </div>
+            </div>
+            <div id="part-four">
+                <div class="reset">
+                    <button class="reset-button" onclick="reset()">Resetar</button>
+                </div>
+                <div class="format-input">
+                    <label for="profit">Lucro desejado:</label>
+                    <input type="number" id="profit" placeholder="Ex: 50%">
+                    <button class="format-button" onclick="button4()">Próximo</button>
+                </div>
+            </div>
+            <div id="end1">
+                <div class="format-h2">
+                    <h2>Precificação:</h2>
+                </div>
+                <div class="result">
+                    <div class="text">
+                        <ul>
+                            <div class="space-line">
+                                <li id="t1"></li>
+                            </div>
+                            <div class="space-line">
+                                <li id="t2"></li>
+                            </div>
+                            <div class="space-line">
+                                <li id="t3"></li>
+                            </div>
+                            <div class="space-line">
+                                <li id="t4"></li>
+                            </div>
+                            <div class="space-line">
+                                <li id="t5"></li>
+                            </div>
+                            <div class="space-line">
+                                <li id="t6"></li>
+                            </div>
+                            <div class="space-line">
+                                <li id="t7"></li>
+                            </div>
+                            <div class="space-line">
+                                <li id="t8"></li>
+                            </div>
+                        </ul>
+                        <div class="image">
+                            <div class="space-line">
+                                <div class="message">
+                                    <img src="img/hello-kitty.png" alt="Hello Kitty confeiteira">
+                                    <img src="img/namorado-hello-kitty.png" alt="namorado-hello-kitty">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="reset-button" onclick="reset()">Resetar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

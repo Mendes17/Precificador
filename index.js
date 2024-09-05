@@ -1,4 +1,5 @@
-function reset() { // Faz um reload na página
+function reset() {
+  // Faz um reload na página
   location.reload();
 }
 
@@ -18,7 +19,16 @@ function button1() {
   const name = nameProduct.value;
 
   if (name == "") {
-    alert("Digite o nome do produto nenê!");
+    const alertt = document.getElementById("alert");
+    const menssager = document.getElementById("menssager");
+
+    menssager.textContent = "Digite o nome do produto nenê!";
+
+    alertt.style.display = "flex";
+
+    setTimeout(() => {
+      alertt.style.display = "none";
+    }, 3000);
   } else {
     partOne.style.display = "none";
     partTwo.style.display = "flex";
@@ -32,7 +42,16 @@ function button2() {
   const value1 = amount.value;
 
   if (value1 == "") {
-    alert("Digite a quantidade princesa!");
+    const alertt = document.getElementById("alert");
+    const menssager = document.getElementById("menssager");
+
+    menssager.textContent = "Digite a quantidade princesa!";
+
+    alertt.style.display = "flex";
+
+    setTimeout(() => {
+      alertt.style.display = "none";
+    }, 3000);
   } else {
     partTwo.style.display = "none";
     partThree.style.display = "flex";
@@ -46,7 +65,16 @@ function button3() {
   const value2 = allValue.value;
 
   if (value2 == "") {
-    alert("Digite o valorzinho que você pagou meu amor!");
+    const alertt = document.getElementById("alert");
+    const menssager = document.getElementById("menssager");
+
+    menssager.textContent = "Digite o valorzinho que você pagou meu amor!";
+
+    alertt.style.display = "flex";
+
+    setTimeout(() => {
+      alertt.style.display = "none";
+    }, 3000);
   } else {
     partThree.style.display = "none";
     partFour.style.display = "flex";
@@ -60,7 +88,17 @@ function button4() {
   const value3 = Number(profit.value);
 
   if (value3 == "") {
-    alert("Coloca quanto de lucro você quer ganhar vidinhaaa!");
+    const alertt = document.getElementById("alert");
+    const menssager = document.getElementById("menssager");
+
+    menssager.textContent =
+      "Coloca quanto de lucro você quer ganhar vidinhaaa!";
+
+    alertt.style.display = "flex";
+
+    setTimeout(() => {
+      alertt.style.display = "none";
+    }, 3000);
   } else {
     partFour.style.display = "none";
     end1.style.display = "flex";
